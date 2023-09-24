@@ -43,7 +43,7 @@ header{
     text-align: right;
     background-color:#274427a6;
     padding: 8px;
-    position: fixed;
+    position: relative;
     left: 0;
     top: 0;
     right: 0;
@@ -58,23 +58,23 @@ ul {
     overflow: hidden;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20pt;
-  }
+}
 
 li a {
     color: #D4A373;
     text-align: center;
     padding: 20px 16px;
     text-decoration: none;
-     }
+}
 li a:hover {
     background-color: #305a30a6;
-           }
+}
 /*ver como colocar el h2 "quienes somos" más abajo,
- porque se superpone con los nav del header*/
+porque se superpone con los nav del header*/
 .encabezado2{
     display: flex;
 }
-footer, .footer{ 
+.footer{ 
     background-color:#14150e;
     color:white;
     text-align: center;
@@ -82,6 +82,8 @@ footer, .footer{
     padding: 1.5rem;
 }
 .logo{
-    float: left;
-       
+    display: flex; justify-content: normal;
+}
+.container {
+    vertical-align: middle;
 }
