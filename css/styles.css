@@ -15,7 +15,6 @@
     background-color: rgba(134, 96, 50, 0.782);
     text-align:left;
 }
-*/
 /*
  .tituloMenu{
     color:rgb(6, 40, 13);
@@ -24,14 +23,8 @@
     text-align:center;
     background-color:rgb(203, 180, 146);
 }
+*/
 
-p.alineacion{
-    width: 85%;
-    max-width: 850px;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 2rem;
-}
 header{
     text-align: right;
     background-color:#274427a6;
@@ -43,6 +36,7 @@ header{
     }
 li{
     display: inline; /*p/ q los links estén en línea, en vez de uno debajo de otro*/
+    }
 
 ul {
     list-style-type: none;
@@ -55,10 +49,12 @@ li a {
     padding: 20px 16px;
     text-decoration: none;
     }
-li a:hover { /*esta clase es p/ q cuando le pasas el mouse por encima a los links se sombreen*/
+li a:hover { 
     background-color: #305a30a6;
+    color: white;
     border-radius: 8px;
         }        
+/*esta clase es p/ q cuando le pasas el mouse por encima a los links se sombreen*/
 .encabezado2{
     display: grid;
     grid-template-columns: auto auto;
@@ -78,11 +74,8 @@ footer, .footer{
     width: 180px;
     height: 50px; 
 }
-.flex-container{
-    display: flex;
-}
+
 body{
-    padding-top: 6rem;
     margin: 0;
     display: flex;
     flex-direction: column;
