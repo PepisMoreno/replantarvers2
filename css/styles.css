@@ -81,3 +81,11 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
+.imagenNosotras{
+    width: 30rem;
+}
+.container{
+    display: flexbox;
+    position: static;
+    margin-top: 90px;
+}
