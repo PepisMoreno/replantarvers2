@@ -7,22 +7,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RePlantear</title>
-  <link rel="shortcut icon" href=""><!--alguien sabe qué es esto??? porque no sé si quedó de algun script de página o qué-->
+  <link rel="shortcut icon" href="../img/favicon.ico">
 </head>
 
 <body>
 <!-- aca empieza -->
 <body class="grid-container"> <!--armé todo el body con grid template areas para que quede "prolijo" (ponele)-->
   
-  <header> 
-    <a href="index.html"><img src="../img/logo1.png" class="logo" alt="LOGO"></a> 
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="formulario-de-contacto.html">Contacto</a></li>
-        <li><a href="nosotras.html">Nosotras</a></li>
-        <li><a href="tips.html">Tips comunidad</a></li>
-    </ul>      
-  </header>
+  <header class="header">
+    <!--cambie el header -->
+    <div class="logo"><!--acá colocamos la img dentro de una etiqueta <a> para convertirla en un enlace -->
+        <li><a href="index.html"><img src="../img/logo1.png" alt="LOGO"></a> </li>
+    </div>
+    <nav>
+        <ul class="navegacion">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="formulario-de-contacto.html">Contacto</a></li>
+            <li><a href="nosotras.html">Nosotras</a></li>
+            <li><a href="tips.html">Tips comunidad</a></li>
+        </ul>
+    </nav>
+    </header>
 
   <div class="subtitulo_arriba_imagen"><!--acá está el subtítulo principal y la foto principal-->
     <h2> Para plasmar tus proyectos vegetales en tierra firme </h2>
@@ -45,7 +50,7 @@
         </div>
 
         <div class="menu_centro"><!--esta es la opcion del medio del menú con foto-->
-          <a title="problemas" href="../Replantear/Houston_problemas_plantas.html">
+          <a title="problemas" href="../pages/problemas.html">
           <img src="../img/snail-5842411_1280.jpg" alt="problemas" width="600" height="400"></a>
           <div class="descripcion">La luz, el suelo, el agua, los bichos y muchas otras cosas pueden ser un obstáculo en la salud
           de tu planta.

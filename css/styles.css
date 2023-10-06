@@ -32,20 +32,7 @@
     }
     /* aca termina el grid*/
 }
-header{
-    text-align: right;
-    background-color:#274427;
-    padding: 10px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
- }
-.logo{
-        float: left;  /*esto me pone el logo a la izq*/
-        width: 180px; 
-        height: 50px; 
- }
+
  /*ACÁ comienzan estilos para el index*/
  .subtitulo_arriba_imagen{
     display:inline-flex;
@@ -93,23 +80,43 @@ header{
     padding:3rem;
 }/*ACÁ TERMINAN estilos para el index*/
 /*ESTO ES PARA EL HEADER, PARA LA BARRA DE NAVEGACIÓN CON LINKS*/
-li{
-    display: inline; /*p/ q los links estén en línea, en vez de uno debajo de otro*/
-}
-ul {
+header{
+    display: flex;
+    background-color:#274427;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
     list-style-type: none;
+ }
+.header .logo img{
+        float: left;  /*esto me pone el logo a la izq*/
+        width: auto; 
+        height: 50px; 
+        transition: all 0.3s;    
+ }
+ .header .logo img:hover{
+    transform: scale(1.1);
+ }
+
+.header .navegacion li  {
+    display: inline-block;
+    text-align: center; 
+    padding: 0 5px;  
+    
+}
+.header .navegacion li a{
     font-family: 'Montserrat', sans-serif; /*las podemos cambiar luego*/
-  }
-li a {
     color: #D4A373;
-    text-align: center;
     padding: 10px 10px;
     text-decoration: none;
 }
-li a:hover { /*esta clase es p/ q cuando le pasas el mouse por encima a los links se sombreen*/
-    background-color: #305a30a6;
+.navegacion li:hover { /*esta clase es p/ q cuando le pasas el mouse por encima a los links se sombreen*/
     color: white;
-    border-radius: 8px;
+    transform: scale(1.1);
 } /*acá termina barra de navegación*/
 /*ACÁ empiezan estilos para el body de "NOSOTRAS"*/
 .encabezado2{
@@ -149,4 +156,31 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+/*ESTILOS para la página "problemas" */
+.seccion_problemas{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 3rem;
+    row-gap: 6rem;
+    text-align: justify;
+    padding: 3rem;
+}
+.fotoproblemas{
+    background-image: url(../img/foto_problemas.jpg);
+}
+div > h2{
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+div > p,nav{
+   
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
