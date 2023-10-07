@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .grid-container{
     /* aca empieza */
     .header{ grid-area: header; }
@@ -80,11 +84,11 @@
     padding:3rem;
 }/*ACÁ TERMINAN estilos para el index*/
 /*ESTO ES PARA EL HEADER, PARA LA BARRA DE NAVEGACIÓN CON LINKS*/
-header{
+.header{
     display: flex;
     background-color:#274427;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /*esto me coloca los links a la derecha y el logo a la iz*/
+    align-items: center; 
     padding: 10px;
     position: fixed;
     left: 0;
@@ -96,17 +100,16 @@ header{
         float: left;  /*esto me pone el logo a la izq*/
         width: auto; 
         height: 50px; 
-        transition: all 0.3s;    
+        transition: all 0.3s; /*es para el efecto del logo*/
  }
  .header .logo img:hover{
-    transform: scale(1.1);
+    transform: scale(1.1);  /*le da un efecto al logo*/
  }
 
 .header .navegacion li  {
     display: inline-block;
     text-align: center; 
-    padding: 0 5px;  
-    
+    padding: 0 5px;     
 }
 .header .navegacion li a{
     font-family: 'Montserrat', sans-serif; /*las podemos cambiar luego*/
@@ -159,28 +162,52 @@ body{
 }
 
 /*ESTILOS para la página "problemas" */
-.seccion_problemas{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin-top: 3rem;
-    row-gap: 6rem;
-    text-align: justify;
-    padding: 3rem;
-}
+
 .fotoproblemas{
-    background-image: url(../img/foto_problemas.jpg);
+    background-image: url(../img/luz5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    background-size: cover;;
 }
-div > h2{
-    padding: 2rem;
-    font-family: 'Montserrat', sans-serif;
-}
-div > p,nav{
+.fotoproblemas .logo{
+    display: flex;
    
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.contenedorheader .logo img{
+    width: auto; 
+    height: 50px; 
+    transition: all 0.3s; /*es para el efecto del logo*/
 }
+.fotoproblemas .logo img:hover{
+transform: scale(1.1);  /*le da un efecto al logo*/
+}
+.fotoproblemas .contenedorheader{
+    display: flex;
+    right: 0;
+    left: 0;
+    top:0;
+    align-items: center;
+    background-color:#274427;
+    list-style-type: none; 
+    padding: 10px;
+    position: fixed;
+   justify-content: space-between;
+}
+.fotoproblemas .contenedorheader li{
+    display: inline-block;
+    text-align: center; 
+    padding: 0 5px;     
+}
+.fotoproblemas .contenedorheader li a{
+    font-family: 'Montserrat', sans-serif; /*las podemos cambiar luego*/
+    color: #D4A373;
+    padding: 10px 10px;
+    text-decoration: none;   
+}
+.contenedorheader li:hover{
+    transform: scale(1.1);
+    color: white; /*sacar*/
+}
+
+
