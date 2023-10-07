@@ -28,7 +28,6 @@
     }
     
     .grid-container > div {
-
       background-color: rgba(134, 96, 50, 0.782);
       text-align: center;
       /* padding: 20px 0; */
@@ -74,7 +73,7 @@
     background-color:beige;
     display:flex;
     flex-direction: column;
-} 
+}
 .descripcion{
     display:inline-block;
     color:rgb(102, 28, 28);
@@ -83,7 +82,6 @@
     text-align:justify;
     background-color:rgba(134, 96, 50, 0.782);
     padding:3rem;
-
 }/*ACÁ TERMINAN estilos para el index*/
 /*ESTO ES PARA EL HEADER, PARA LA BARRA DE NAVEGACIÓN CON LINKS*/
 .header{
@@ -133,20 +131,19 @@
 .h2-quienessomos{
     font-family: 'Julius Sans One', sans-serif;
     font-size: 40px;
-     text-align: center;
-     margin-right: 5rem;
+    text-align: center;
+    margin-right: 5rem;
     padding-top: 6rem;
-    }
- .parrafo-nosotras{
+}
+.parrafo-nosotras{
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
     font-size: 18px;
     margin-right: 5rem;
- } 
+} 
 .imagenNosotras{
     width: 30rem;
-    }  /*ACÁ TERMINAN estilos para "NOSOTRAS"*/
- 
+}/*ACÁ TERMINAN estilos para "NOSOTRAS"*/
 footer, .footer{ 
     background-color:black;
     color:white;
@@ -157,7 +154,7 @@ footer, .footer{
     bottom: 0;
     margin-top: auto;
 }
- body{
+body{
     margin: 0; /*es para que no haya margen entre el body y las otras cajas como el footer*/
     display: flex;
     flex-direction: column;
