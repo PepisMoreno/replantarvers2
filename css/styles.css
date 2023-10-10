@@ -53,6 +53,7 @@
     font-size: 2rem;
     text-align:center;
     background-color:rgba(134, 96, 50, 0.782);
+
 }
 .trio{
     display:inline-flex;
@@ -74,6 +75,7 @@
     display:flex;
     flex-direction: column;
 }
+}
 .descripcion{
     display:inline-block;
     color:rgb(102, 28, 28);
@@ -83,7 +85,18 @@
     background-color:rgba(134, 96, 50, 0.782);
     padding:3rem;
 }/*ACÁ TERMINAN estilos para el index*/
+
 /*ESTO ES PARA EL HEADER, PARA LA BARRA DE NAVEGACIÓN CON LINKS*/
+.header{
+    display: flex;
+    background-color:#274427;
+    justify-content: space-between; /*esto me coloca los links a la derecha y el logo a la iz*/
+    align-items: center; 
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
 .header{
     display: flex;
     background-color:#274427;
@@ -112,10 +125,29 @@
     padding: 0 5px;     
 }
 .header .navegacion li a{
+ }
+.header .logo img{
+        float: left;  /*esto me pone el logo a la izq*/
+        width: auto; 
+        height: 50px; 
+        transition: all 0.3s; /*es para el efecto del logo*/
+ }
+ .header .logo img:hover{
+    transform: scale(1.1);  /*le da un efecto al logo*/
+ }
+
+.header .navegacion li  {
+    display: inline-block;
+    text-align: center; 
+    padding: 0 5px;     
+}
+.header .navegacion li a{
     font-family: 'Montserrat', sans-serif; /*las podemos cambiar luego*/
     color: #D4A373;
     padding: 10px 10px;
     text-decoration: none;
+}
+.navegacion li:hover { /*esta clase es p/ q cuando le pasas el mouse por encima a los links se sombreen*/
 }
 .navegacion li:hover { /*esta clase es p/ q cuando le pasas el mouse por encima a los links se sombreen*/
     color: white;
@@ -136,6 +168,8 @@
     padding-top: 6rem;
 }
 .parrafo-nosotras{
+}
+.parrafo-nosotras{
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
     font-size: 18px;
@@ -153,7 +187,9 @@ footer, .footer{
     padding: 1.5rem;
     bottom: 0;
     margin-top: auto;
+
 }
+body{
 body{
     margin: 0; /*es para que no haya margen entre el body y las otras cajas como el footer*/
     display: flex;
