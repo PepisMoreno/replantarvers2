@@ -130,29 +130,45 @@
 
 /*ACÁ empiezan estilos para el body de "NOSOTRAS"*/
 .encabezado2{
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 6rem;
-    justify-content: center;
+    display: flex;
     }
 .h2-quienessomos{
     font-family: 'Julius Sans One', sans-serif;
     font-size: 40px;
-
+    color: black;
     text-align: center;
-    margin-right: 5rem;
-    padding-top: 6rem;
+    padding-top: 5em;
 }
 .parrafo-nosotras{
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
-    font-size: 18px;
-    margin-right: 5rem;
-
+    font-size: 16px;
+    margin: 3rem 3rem;
 } 
 .imagenNosotras{
     width: 30rem;
-}/*ACÁ TERMINAN estilos para "NOSOTRAS"*/
+}
+.imagen-nosotras2{
+    display: none;
+}
+@media(max-width:800px){
+.imagenNosotras{
+    display: none;
+}
+.encabezado2{
+    display: flex;
+    flex-direction: column;
+}
+.imagen-nosotras2{
+   display: flex;
+   flex-direction: row;   
+   margin-top: 4rem; 
+}
+.h2-quienessomos{
+    padding-top: 1em;
+}
+}
+/*ACÁ TERMINAN estilos para "NOSOTRAS"*/
 
 
 footer, .footer{ 
@@ -246,8 +262,9 @@ transform: scale(1.1);  /*le da un efecto al logo*/
 }
 #luzproblem .conteiner_luz{
     text-align: center;
-    padding: 200px 12px;
-    font-family: 'Montserrat', sans-serif; 
+    padding: 3em;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 #mucha_pocaluz .cajitas{
     background-color: rgb(30, 30, 30);
@@ -275,7 +292,7 @@ color: black;
 }
 #mucha_pocaluz .cajitas button{
     font-size: 1em;
-    padding: 10px 15px;
+    padding: 20px 0px;
     border-radius: 8px;
     margin-top: 30px;
     background-color: rgba(128, 128, 128, 0.108);
@@ -292,7 +309,13 @@ color: black;
 #mucha_pocaluz .conteiner_luz{
     display: flex;
     margin: 10px 20px;
+    padding: 2em;
 }
+#luzproblem .conteiner_luz{
+    padding: 6em;
+}
+}
+
 
 /*consejos de Contacto.html*/
 
@@ -330,7 +353,7 @@ color: white;
     
     color: white;
 }
-}
+
 .cajita:nth-child(3){
     background-image: 
     url(../img/FONDO.jpg);
