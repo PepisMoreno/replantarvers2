@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
 *{
-    margin: 0;
+    margin: 0;/*es para que no haya margen entre el body y las otras cajas como el footer*/
     padding: 0;
     box-sizing: border-box;
 }
@@ -172,8 +172,6 @@
 }
 }
 /*ACÁ TERMINAN estilos para "NOSOTRAS"*/
-
-
 footer, .footer{ 
     background-color:black;
     color:white;
@@ -186,13 +184,13 @@ footer, .footer{
 
 }
 body{
-    margin: 0; /*es para que no haya margen entre el body y las otras cajas como el footer*/
+    margin: 0;/*ver si se puede sacar porque ya está en el * */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/*ESTILOS para la página "problemas" */
+/*ESTILOS para la página "problemas_luz" */
 .fotoproblemas{
     background-image: url(../img/luz5.jpg);
     background-repeat: no-repeat;
