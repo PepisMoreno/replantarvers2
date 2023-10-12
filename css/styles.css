@@ -167,6 +167,9 @@
 .h2-quienessomos{
     padding-top: 1em;
 }
+.header{
+    flex-direction: column;
+}
 }
 /*ACÁ TERMINAN estilos para "NOSOTRAS"*/
 
