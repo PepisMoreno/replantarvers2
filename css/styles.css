@@ -173,54 +173,6 @@ body{
 
 /*ESTILOS para la página "problemas" */
 
-/*.fotoproblemas{
-    background-image: url(../img/luz5.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
-    background-size: cover;
-}
-.fotoproblemas .logo{
-    display: flex;
-}
-.contenedorheader .logo img{
-    width: auto; 
-    height: 50px; 
-    transition: all 0.3s; 
-}
-.fotoproblemas .logo img:hover{
-transform: scale(1.1);  
-}
-.fotoproblemas .contenedorheader{
-    display: flex;
-    right: 0;
-    left: 0;
-    top:0;
-    align-items: center;
-    background-color:#274427;
-    list-style-type: none; 
-    padding: 10px;
-    position: fixed;
-   justify-content: space-between;
-}
-.fotoproblemas .contenedorheader li{
-    display: inline-block;
-    text-align: center; 
-    padding: 0 5px;     
-}
-.fotoproblemas .contenedorheader li a{
-    font-family: 'Montserrat', sans-serif; 
-    color: #D4A373;
-    padding: 10px 10px;
-    text-decoration: none;   
-}
-.contenedorheader li:hover{
-    transform: scale(1.1);
-    color: white; /*sacar*/
-
-
-/*body de problemas */
-
 #linktree .links {
 display: flex;
 flex-direction: row;
@@ -235,6 +187,9 @@ border-color: rgba(134, 96, 50, 0.349);
 width: 18em;
 font-family: 'Montserrat', sans-serif; 
 color: #274427d8;
+}
+#linktree a{
+ margin: 1% 25%;
 }
 #linktree i{
     display: none;
@@ -252,8 +207,8 @@ color: #274427d8;
     background-color: rgb(30, 30, 30);
     background-size: cover;
     background-position: center center;
-    padding: 70px;
-    margin: 30px 30px;
+    padding: 50px;
+    margin: 10px 10px;
     border-radius: 15px;
     font-family:'Montserrat', sans-serif;
 }
@@ -274,7 +229,7 @@ color: black;
 }
 #mucha_pocaluz .cajitas button{
     font-size: 1em;
-    padding: 20px 0px;
+    padding: 5px 0px;
     border-radius: 8px;
     margin-top: 30px;
     background-color: rgba(128, 128, 128, 0.108);
@@ -338,19 +293,25 @@ color: black;
 .imgluz img{
     display: none;
 }
-.imgluz p{
-    height: 8em;
-    background-color: rgba(134, 96, 50, 0.29);
-    margin: 0;
-    margin-bottom: 2em;
-}
+
 #linktree .links{
     display: inline;
     margin: 0.5em; 
     border: none;
 }
+#linktree div{
+    display: flex;
+    background-color: rgba(220, 219, 215, 0.762);
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin-top: 4.5em;
+}
 #linktree i{
     display: inline;
+}
+#luzproblem h2{
+    margin-top: 5em;
 }
 #luzproblem p{
     margin-left: 2em;
@@ -370,10 +331,7 @@ color: black;
     display: flex;
     flex-direction: row;
 }
-
 }
-
-
 /*consejos de Contacto.html*/
 
 .conteiner_negro{
