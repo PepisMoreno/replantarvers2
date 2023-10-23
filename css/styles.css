@@ -163,7 +163,6 @@ footer, .footer{
     padding: 1.5rem;
     bottom: 0;
     margin-top: auto;
-
 }
 body{
     margin: 0;/*ver si se puede sacar porque ya está en el * */
@@ -237,13 +236,13 @@ width: 18em;
 font-family: 'Montserrat', sans-serif; 
 color: #274427d8;
 }
-
+#linktree i{
+    display: none;
+}
 #linktree .links:hover{
     color: black;
 }
-/*.conteiner_luz{
-    max-width: 1400px;
-}*/
+
 #luzproblem , #aguaproblem ,#bichosproblem ,#sueloproblem ,#otrosproblem {
     text-align: center;
     padding: 3em;
@@ -300,6 +299,13 @@ color: black;
 #aguaproblem img{
     display: none;
 }
+#bichosproblem li{
+    list-style-type: none;
+}
+#bichosproblem h3, p, .listabichos{
+    margin: 2em;
+    text-align: justify;
+}
 
 @media(max-width:800px){
     .imagenNosotras{
@@ -338,11 +344,13 @@ color: black;
     margin: 0;
     margin-bottom: 2em;
 }
-
 #linktree .links{
     display: inline;
-    margin: 1em; 
-    border-style: dashed;
+    margin: 0.5em; 
+    border: none;
+}
+#linktree i{
+    display: inline;
 }
 #luzproblem p{
     margin-left: 2em;
