@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
 *{
-    margin: 0;/*es para que no haya margen entre el body y las otras cajas como el footer*/
+    margin: 0;/*es para que no haya margen entre el body y las otras cajas como el footer*//*es para que no haya margen entre el body y las otras cajas como el footer*/
     padding: 0;
     box-sizing: border-box;
 }
@@ -165,7 +165,7 @@ footer, .footer{
     margin-top: auto;
 }
 body{
-    margin: 0;/*ver si se puede sacar porque ya está en el * */
+    margin: 0; /*ver si se puede sacar porque ya está en el * */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -352,6 +352,11 @@ color: black;
     border-radius: 15px;
     font-family:'Montserrat', sans-serif;
 }
+#consejo .cajita:hover{
+    cursor: pointer;
+    transform: scale(1.05);  
+    overflow: hidden;
+    }
 #consejo .conteiner_negro{
     text-align: center;
     padding: 1px 0px;
@@ -374,20 +379,7 @@ color: white;
     url(../img/FONDO.jpg);
     color: white;
 }
-#consejo .cajita button{
-    font-size: 1em;
-    padding: 10px 15px;
-    border-radius: 8px;
-    margin-top: 30px;
-    background-color: rgba(128, 128, 128, 0.108);
-    color: white;
-    border: 2px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.154);
-}
-#consejo .cajita button:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
+
 @media(min-width: 720px){/*esto significa que cuando el ancho de la 
     pantalla supere los 720px se le van a aplicar los sig estilos*/
 #consejo .conteiner_negro{
@@ -401,21 +393,21 @@ color: white;
         
             * {box-sizing: border-box; }
 
+ 	.h2consejos{
+                font-family: 'Julius Sans One', sans-serif;
+                font-size: 40px;
+                text-align: center;
+                margin: 5rem;
+                margin-right: 5rem;
+                padding-top: 6rem;
+                 
+                }
             .parrafo-tips{
                     font-family: 'Montserrat', sans-serif;
                     text-align: center;
                     font-size: 18px;
                     margin-bottom: 30px;
                     } 
-          
-            .h2consejos{
-                font-family: 'Julius Sans One', sans-serif;
-                font-size: 40px;
-                text-align: center;
-                margin: 5rem;
-                margin-right: 5rem;
-                padding-top: 6rem; 
-                }
 
             .encabezadoTips{
                 display: grid;
@@ -423,7 +415,6 @@ color: white;
                 justify-content: center;
                 }
 
-            
           /*  .flex{
                 display: flex;
                 justify-content:center ;
@@ -443,18 +434,21 @@ color: white;
                 height: auto;
                 }
 
-                .responsive {
+	 div.gallery img:hover{
+                transform: scale(1.05);
+            }
+           
+ 	 .responsive {
                 padding: 6px;
                 float:left;
                 width: 33%;
                 }
 
-             @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 700px) {
             
             .responsive {
                         width: 49.99999%;
-                        margin: 15px 0;
-                    }
+                        margin: 15px 0;}
                     }
 
              @media only screen and (max-width: 500px) {
@@ -464,20 +458,21 @@ color: white;
                     }
                     }
 
+  
                 .clearfix:after {
                     content: "";
                     display: table;
                     clear: both;}
-                                
+
                 /*--acá arranca el FORMULARIO-->*/
 
                 * {box-sizing: border-box;
                     }
 
-                    input[type=text], select, textarea {
+                     input[type=text], select, textarea {
                         width: 100%;
                         padding: 12px;
-                        border: 1px solid #ccc;
+                        border: 1px solid #274427;
                         border-radius: 4px;
                         resize: vertical;
                         font-family: 'Montserrat', sans-serif;
@@ -502,6 +497,7 @@ color: white;
 
                     input[type=submit]:hover {
                         background-color: #274427;
+                        transform: scale(1.05);
                     }
                     input[type=reset] {
                         background-color: #274427;
@@ -516,6 +512,7 @@ color: white;
 
                     input[type=reset]:hover {
                         background-color: #274427;
+ 			transform: scale(1.05);
                     }
 
                     .formulario {
@@ -559,3 +556,29 @@ h2{font-size: 2.7em;}
 h3{font-size: 2em;}
 p{font-size:1em ;}*/
 /*acá termina la prueba*/
+         
+/*ver esto que está acá si va o no
+#consejo .cajita button{
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 30px;
+    background-color: rgba(128, 128, 128, 0.108);
+    color: white;
+    border: 2px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.154);
+}
+#consejo .cajita button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+*/
+
+          
+
+
+            
+
+              
+                                
