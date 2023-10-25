@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nanum+Gothic&display=swap');
+   
+    
 
 *{
     margin: 0;/*es para que no haya margen entre el body y las otras cajas como el footer*//*es para que no haya margen entre el body y las otras cajas como el footer*/
@@ -39,6 +41,7 @@
 }
 
  /*ACÁ comienzan estilos para el index*/
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
  .subtitulo_arriba_imagen{
     display:inline-flex;
@@ -333,7 +336,15 @@ color: black;
 }
 }
 /*consejos de Contacto.html*/
-
+.h2consejos {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    margin-right: 5rem;
+    padding-top: 6rem; 
+    
+    }
 .conteiner_negro{
     max-width: 1400px;
     margin: auto;
@@ -402,17 +413,28 @@ color: white;
                 padding-top: 6rem;
                  
                 }
-            .parrafo-tips{
-                    font-family: 'Montserrat', sans-serif;
-                    text-align: center;
-                    font-size: 18px;
-                    margin-bottom: 30px;
-                    } 
+    .parrafo-tips{
+                font-family: 'Julius Sans One', sans-serif;
+                text-align: center;
+                font-size: 18px;
+                margin-bottom: 30px;
+                } 
+    
+    .h3cajitas{
+                font-family: 'Julius Sans One', sans-serif;
+                text-align: center;
+                 
+                    }
+    .parrafo-cajitas{
+                font-family: 'Julius Sans One', sans-serif;
+                text-align: center;
+                
+                    }
 
-            .encabezadoTips{
-                display: grid;
-                grid-template-columns: auto auto;
-                justify-content: center;
+    .encabezadoTips{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
                 }
 
           /*  .flex{
