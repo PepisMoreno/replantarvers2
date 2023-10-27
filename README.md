@@ -1,5 +1,5 @@
-Enlace de nuestra página RePlantar (Actualizado 26/10 14 hs) Falta terminar
-https://spectacular-gecko-d30f05.netlify.app
+Enlace de nuestra página RePlantar 
+https://PepisMoreno.github.io/replantarvers2/
 
 TPO Desarrollo Web - HTML, CSS, Javascript, Github
 
