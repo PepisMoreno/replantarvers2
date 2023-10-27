@@ -41,7 +41,9 @@
 }
 
  /*ACÁ comienzan estilos para el index*/
+
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
 
  .subtitulo_arriba_imagen{
     display:inline-flex;
@@ -89,7 +91,8 @@
     background-color:white;
     padding:3rem;
 
-}/*ACÁ TERMINAN estilos para el index*/
+}
+/*ACÁ TERMINAN estilos para el index*/
 
 /*ESTO ES PARA EL HEADER, PARA LA BARRA DE NAVEGACIÓN CON LINKS*/
 .header{
@@ -190,6 +193,7 @@ border-color: rgba(134, 96, 50, 0.349);
 width: 18em;
 font-family: 'Montserrat', sans-serif; 
 color: #274427d8;
+
 }
 #linktree a{
  margin: 1% 25%;
@@ -197,6 +201,7 @@ color: #274427d8;
 #linktree i{
     display: none;
 }
+
 #linktree .links:hover{
     color: black;
 }
@@ -257,12 +262,27 @@ color: black;
 #aguaproblem img{
     display: none;
 }
+
+#sueloproblem img{
+    display: none;
+}
+
 #bichosproblem li{
     list-style-type: none;
 }
 #bichosproblem h3, p, .listabichos{
-    margin: 2em;
+    margin: 1em;
     text-align: justify;
+}
+#sueloproblem li{
+    list-style-type: none;
+}
+.pie_deimg{
+    padding: 1em;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.169);
 }
 
 @media(max-width:800px){
@@ -334,7 +354,50 @@ color: black;
     display: flex;
     flex-direction: row;
 }
+#aguaproblem .imgriego2{
+    display: flex;
+    flex-direction: row-reverse;
 }
+#sueloproblem img{
+    display: flex;
+    margin-top: 3em;
+}
+#sueloproblem .imgsuelo{
+    display: flex;
+    flex-direction: row;
+}
+#sueloproblem p .li{
+    text-align: justify;
+}
+#sueloproblem .compost{
+    display: flex;
+    flex-direction: row;
+}
+#sueloproblem .imgcompost{
+    display: flex;
+    flex-direction: row; 
+    margin-bottom: 3em; 
+}
+#otrosproblem .imghelada img{
+    width: 40%;
+}
+#otrosproblem .imghelada{
+    display: flex;
+    flex-direction: row;
+}
+}
+/*consejos de Contacto.html*/
+
+#aguaproblem img{
+    display: flex;
+}
+
+#aguaproblem .imgriego{
+    display: flex;
+    flex-direction: row;
+}
+
+
 /*consejos de Contacto.html*/
 .h2consejos {
     font-family: 'Julius Sans One', sans-serif;
@@ -413,6 +476,7 @@ color: white;
                 padding-top: 6rem;
                  
                 }
+
     .parrafo-tips{
                 font-family: 'Julius Sans One', sans-serif;
                 text-align: center;
@@ -435,6 +499,7 @@ color: white;
             display: grid;
             grid-template-columns: auto auto;
             justify-content: center;
+
                 }
 
           /*  .flex{
@@ -600,7 +665,4 @@ p{font-size:1em ;}*/
           
 
 
-            
-
-              
-                                
+         
