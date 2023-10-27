@@ -242,7 +242,7 @@ color: black;
     cursor: pointer;
 }
 #aguaproblem h3, p{
-    margin: 2em;
+    margin: 1em;
     text-align: justify;
 }
 .error{
@@ -261,11 +261,18 @@ color: black;
     list-style-type: none;
 }
 #bichosproblem h3, p, .listabichos{
-    margin: 2em;
+    margin: 1em;
     text-align: justify;
 }
 #sueloproblem li{
     list-style-type: none;
+}
+.pie_deimg{
+    padding: 1em;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.169);
 }
 @media(max-width:800px){
     .imagenNosotras{
@@ -328,7 +335,6 @@ color: black;
     margin-right: 2em;
     text-align: justify;
 }
-
 #aguaproblem img{
     display: flex;
 }
@@ -357,8 +363,15 @@ color: black;
 }
 #sueloproblem .imgcompost{
     display: flex;
+    flex-direction: row; 
+    margin-bottom: 3em; 
+}
+#otrosproblem .imghelada img{
+    width: 40%;
+}
+#otrosproblem .imghelada{
+    display: flex;
     flex-direction: row;
-    
 }
 }
 /*consejos de Contacto.html*/
