@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nanum+Gothic&display=swap');
-   
-    
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
 *{
-    margin: 0;/*es para que no haya margen entre el body y las otras cajas como el footer*//*es para que no haya margen entre el body y las otras cajas como el footer*/
+    margin: 0;/*es para que no haya margen entre el body y las otras cajas como el footer*/
     padding: 0;
     box-sizing: border-box;
 }
@@ -212,7 +210,6 @@ border-color: rgba(134, 96, 50, 0.349);
 width: 18em;
 font-family: 'Montserrat', sans-serif; 
 color: #274427d8;
-
 }
 #linktree a{
  margin: 1% 25%;
@@ -228,7 +225,7 @@ color: #274427d8;
 #luzproblem , #aguaproblem ,#bichosproblem ,#sueloproblem ,#otrosproblem {
     text-align: center;
     padding: 3em;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 #mucha_pocaluz .cajitas{
     background-color: rgb(30, 30, 30);
@@ -278,13 +275,12 @@ color: black;
 .solucion{
     color: #438043;
 }
-#aguaproblem img{
+#aguaproblem .imgriego img{
     display: none;
 }
-#sueloproblem img{
+#aguaproblem .imgriego2 img{
     display: none;
 }
-
 #sueloproblem img{
     display: none;
 }
@@ -376,12 +372,13 @@ color: black;
     margin-right: 2em;
     text-align: justify;
 }
-#aguaproblem img{
-    display: flex;
-}
-#aguaproblem .imgriego{
+
+#aguaproblem .imgriego img{
     display: flex;
     flex-direction: row;
+}
+#aguaproblem .imgriego2 img{
+    display: flex;
 }
 #aguaproblem .imgriego2{
     display: flex;
