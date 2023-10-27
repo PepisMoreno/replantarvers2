@@ -46,13 +46,21 @@
 
 
  .subtitulo_arriba_imagen{
-    display:inline-flex;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 30px;
+    color:rgb(12, 51, 38);
+    background-color: rgba(54, 138, 100, 0.666);
+    align-items: end;
+    text-align: center;
+    padding: 2em;
+
+   /* display:inline-flex;
     color:rgb(12, 51, 38);
     font-family:'Julius Sans One','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:2.5rem;
     background-color: rgba(54, 138, 100, 0.666);
     align-items: end;
-    padding:2rem;
+    padding:2rem; */
 }
 .titulo_menu{
     color:rgb(6, 40, 13);
@@ -62,7 +70,16 @@
     background-color:rgba(134, 96, 50, 0.782);
 
 }
-.trio{
+
+.inicio{
+    font-size: 30px;
+    padding-top: 5em;
+    background-image: url('../img/leaves-7770035_1280.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+/*.trio{
     display:inline-flex;
     padding: 0.5rem;
     background-color:rgba(134, 96, 50, 0.782);
@@ -81,7 +98,8 @@
     background-color:beige;
     display:flex;
     flex-direction: column;
-}
+}*/
+
 .descripcion{
     display:inline-block;
     color:rgb(102, 28, 28);
@@ -106,6 +124,7 @@
     top: 0;
     right: 0;
     list-style-type: none;
+    z-index: 1000;
  }
 .header .logo img{
         float: left;  /*esto me pone el logo a la izq*/
@@ -501,19 +520,9 @@ color: white;
             justify-content: center;
 
                 }
-
-          /*  .flex{
-                display: flex;
-                justify-content:center ;
-                background-color: rgba(134, 96, 50, 0.782);
-                align-items: center;
-                padding:2rem;
-                font-family: 'Montserrat', sans-serif;
-            }
-            */
                
             div.gallery {
-                border: 1px solid #ccc;
+                border: 0;
                 }
 
             div.gallery img {
