@@ -5,54 +5,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>RePlantear</title>
+        <title>Contacto</title>
 
         <link rel="stylesheet" href="../css/styles.css">
         <script src="https://kit.fontawesome.com/3b21fc997b.js" crossorigin="anonymous"></script>  
        <!-- <script src="../JS/index.js"> </script>-->
 
     </head>
-<style>
-        @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nanum+Gothic&display=swap');
-       
-      
-                .h2consejos{
-                font-family: 'Julius Sans One', sans-serif;
-                font-size: 40px;
-                text-align: center;
-                margin: 0;
-                margin-right: 5rem;
-                padding-top: 6rem;
-                
-            }
-           
-    </style>
 
-
-    <header class="header">
+  <header class="header">
         
-        <div class="logo">
-            <li><a href="index.html"><img src="../img/logo1.png" alt="LOGO"></a> </li>
-        </div>
-        <nav>
-            <ul class="navegacion">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="formulario-de-contacto.html">Contacto</a></li>
-                <li><a href="nosotras.html">Nosotras</a></li>
-                <li><a href="tips.html">Tips comunidad</a></li>
-            </ul>
-        </nav>
-        </header>
+    <div class="logo">
+        <li><a href="../index.html"><img src="../img/logo1.png" alt="LOGO"></a> </li>
+    </div>
+    <nav>
+        <ul class="navegacion">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="formulario-de-contacto.html">Contacto</a></li>
+            <li><a href="nosotras.html">Nosotras</a></li>
+            <li><a href="tips.html">Tips comunidad</a></li>
+        </ul>
+    </nav>
+    </header>
     <body>
-     <main>
-        
+    <main>
                    <div class="formulario">
                 <h2 class="h2consejos">Formulario de Contacto</h2>
+                <p class="parrafo-tips">¿Tenés alguna duda? Dejanos tus datos y nos comunicamos con vos!</p>
                 <div>                   
                         <form action="">
                             <div class="row">
                                 <div class="col-25">  
-                                    <label for="inputNombre">Nombre:</label>
+                                    <label for="inputNombre" class="parrafo-tips">Nombre:</label>
                                     <br>
                                 </div>
 
@@ -64,7 +48,7 @@
 
                             <div class="row">  
                                 <div class="col-25">
-                                    <label for="inputApellido">Apellido:</label>
+                                    <label for="inputApellido" class="parrafo-tips">Apellido:</label>
                                     <br>
                                 </div> 
                                 <div class="col-75">
@@ -74,7 +58,7 @@
                             </div>
                             <div class="row">  
                                 <div class="col-25">
-                                    <label for="inputMail">Corre electrónico:</label>
+                                    <label for="inputMail" class="parrafo-tips">Correo electrónico:</label>
                                     <br>
                                 </div> 
                                 <div class="col-75">
@@ -86,44 +70,40 @@
                             <div class="row">
                                 
                                  <div class="col-25">
-                                    <label for="textAreaMensaje">Escribe tu mensaje aquí</label>
+                                    <label for="textAreaMensaje" class="parrafo-tips">Escribe tu mensaje aquí</label>
                                     <br>
                                 </div>
                                 <div class="col-75">
-                                    <textarea name="textAreaMensaje" id="" cols="30" rows="10" required></textarea>
+                                    <textarea name="textAreaMensaje" id="" cols="30" rows="10"></textarea>
                                     <br>
                                 </div>
                                 <div class="row">
-                                    <input type="submit" value="Enviar comentarios..">
+                                    <input type="submit" value="Enviar comentarios.." required>
                                     <input type="reset" value="Borrar todo..">
                                 </div>
-                                
                                 </form>
-                                
-                                
                     </div>
                    
-                </div> 
-                                 
+                </div>                    
     </main>
-    
 
+  
     <section id="consejo">
         <h2 class="h2consejos"> Algunos consejos para ti...</h2>
         <div class="conteiner_negro">
             <div class="cajita">
-                <h3>Conoce a tus plantas</h3><br>
-                <p>Cada planta es única. Antes de comprar o cuidar una planta, investiga sus necesidades específicas de luz, agua y temperatura. Escucha las experiencias de otros jardineros y aprende de sus éxitos y errores..</p>
+                <h3 class="h3cajitas">Conoce a tus plantas</h3><br>
+                <p class="parrafo-cajitas">Cada planta es única. Antes de comprar o cuidar una planta, investiga sus necesidades específicas de luz, agua y temperatura. Escucha las experiencias de otros jardineros y aprende de sus éxitos y errores..</p>
             </div>
 
             <div class="cajita">
-                <h3>No temas podar</h3><br>
-                <p>La poda regular puede ser beneficiosa para muchas plantas. Escucha las historias de aquellos que han tenido éxito al podar sus plantas para promover un crecimiento saludable y evitar enfermedades.</p>   
+                <h3 class="h3cajitas">No temas podar</h3><br>
+                <p class="parrafo-cajitas">La poda regular puede ser beneficiosa para muchas plantas. Escucha las historias de aquellos que han tenido éxito al podar sus plantas para promover un crecimiento saludable y evitar enfermedades.</p>   
             </div>     
 
             <div class="cajita">
-                <h3>Controla las plagas</h3><br>
-                <p>Las plagas pueden ser un problema común en las plantas. Escucha las recomendaciones de otros jardineros sobre cómo identificar y tratar plagas de manera efectiva.</p>   
+                <h3 class="h3cajitas">Controla las plagas</h3><br>
+                <p class="parrafo-cajitas">Las plagas pueden ser un problema común en las plantas. Escucha las recomendaciones de otros jardineros sobre cómo identificar y tratar plagas de manera efectiva.</p>   
             </div>
             
         </div>
@@ -131,18 +111,18 @@
             <div class="conteiner_negro">
 
                 <div class="cajita">
-                    <h3>Utiliza fertilizantes con moderación</h3><br>
-                    <p>El exceso de fertilizante puede dañar las plantas. Aprende de las experiencias de personas que han encontrado el equilibrio adecuado entre alimentar sus plantas y evitar la sobrealimentación.</p>   
+                    <h3 class="h3cajitas">Utiliza fertilizantes con moderación</h3><br>
+                    <p class="parrafo-cajitas">El exceso de fertilizante puede dañar las plantas. Aprende de las experiencias de personas que han encontrado el equilibrio adecuado entre alimentar sus plantas y evitar la sobrealimentación.</p>   
                 </div>
 
                 <div class="cajita">
-                    <h3>Aprende a regar correctamente</h3><br>
-                    <p>El riego es una de las áreas más críticas del cuidado de las plantas. Escucha consejos sobre cómo regar según las necesidades de cada planta y cómo evitar el riego excesivo o insuficiente.</p>   
+                    <h3 class="h3cajitas">Aprende a regar correctamente</h3><br>
+                    <p class="parrafo-cajitas">El riego es una de las áreas más críticas del cuidado de las plantas. Escucha consejos sobre cómo regar según las necesidades de cada planta y cómo evitar el riego excesivo o insuficiente.</p>   
                 </div>
 
                 <div class="cajita">
-                    <h3>Elige macetas adecuadas</h3><br>
-                    <p>Las macetas y contenedores incorrectos pueden afectar negativamente el crecimiento de las plantas. Aprende de las experiencias de quienes han seleccionado macetas que permiten un buen drenaje y espacio para el crecimiento de las raíces.</p>   
+                    <h3 class="h3cajitas">Elige macetas adecuadas</h3><br>
+                    <p class="parrafo-cajitas">Las macetas y contenedores incorrectos pueden afectar negativamente el crecimiento de las plantas. Aprende de las experiencias de quienes han seleccionado macetas que permiten un buen drenaje y espacio para el crecimiento de las raíces.</p>   
                 </div>
                 
             </div> 
@@ -151,28 +131,19 @@
         
         </section>
         <section id="iFrame">
-            <p class="descripcion">10 propuestas de nuestros amigos del Perú...</p>
-            <iframe src="https://www.serpar.gob.pe/noticias/10-cosas-que-debes-aprender-sobre-el-cuidado-de-plantas/" width="100%" height="300" style="border:none;">
+            <p class="h2consejos">Te dejamos unos consejos del Dr. Matta respecto al cuidado general de las plantas de interior... </p>
+            <iframe src="https://www.youtube.com/embed/gCrWENmRa-s" width="100%" height="300" style="border:none;">
             </iframe>
             
         </section>
-        
-        <form action="index.html" class="">
-            <input type="submit" value="volver.."> 
-        </form> 
-        
 
-        <footer class="footer">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-            <p class="footer">&copy; Todos los derechos reservados 2023<br>
-                Programado por Josefina Moreno, Carina Rodrigues y Sofia Pizzamus</p>
-            
-        </footer>
-
-       
-    </body>
-     
-
- </html>
+        <footer class="footer"> <!--este es el footer-->
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <p class="footer"> &copy; Todos los derechos reservados 2023<br>
+        Programado por Josefina Moreno, Carina Rodrigues y Sofia Pizamus</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,21 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
 *{
-    margin: 0;
+    margin: 0;/*es para que no haya margen entre el body y las otras cajas como el footer*//*es para que no haya margen entre el body y las otras cajas como el footer*/
     padding: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nanum+Gothic&display=swap');
-       
-      
-                .h2consejos{
-                font-family: 'Julius Sans One', sans-serif;
-                font-size: 40px;
-                text-align: center;
-                margin: 5rem;
-                margin-right: 5rem;
-                padding-top: 6rem;}
-                
 .grid-container{
     /* aca empieza */
     .header{ grid-area: header; }
@@ -50,7 +39,6 @@
 }
 
  /*ACÁ comienzan estilos para el index*/
-
 
  .subtitulo_arriba_imagen{
     display:inline-flex;
@@ -143,34 +131,29 @@
 
 /*ACÁ empiezan estilos para el body de "NOSOTRAS"*/
 .encabezado2{
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 6rem;
-    justify-content: center;
+    display: flex;
     }
 .h2-quienessomos{
     font-family: 'Julius Sans One', sans-serif;
     font-size: 40px;
-
-
+    color: black;
     text-align: center;
-    margin-right: 5rem;
-    padding-top: 6rem;
+    padding-top: 5em;
 }
 .parrafo-nosotras{
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
-    font-size: 18px;
-    margin-right: 5rem;
-
-
+    font-size: 16px;
+    margin: 3rem 3rem;
 } 
 .imagenNosotras{
     width: 30rem;
-}/*ACÁ TERMINAN estilos para "NOSOTRAS"*/
+}
+.imagen-nosotras2{
+    display: none;
+}
 
-
-
+/*ACÁ TERMINAN estilos para "NOSOTRAS"*/
 footer, .footer{ 
     background-color:black;
     color:white;
@@ -180,103 +163,58 @@ footer, .footer{
     padding: 1.5rem;
     bottom: 0;
     margin-top: auto;
-
 }
 body{
-    margin: 0; /*es para que no haya margen entre el body y las otras cajas como el footer*/
+    margin: 0; /*ver si se puede sacar porque ya está en el * */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 /*ESTILOS para la página "problemas" */
-.fotoproblemas{
-    background-image: url(../img/luz5.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
-    background-size: cover;
+
+#linktree .links {
+display: flex;
+flex-direction: row;
+padding: 1rem;
+display: block;
+text-decoration: none;
+text-align: center;
+border-style: solid;
+border-width: 1px;
+border-radius: 3rem;
+border-color: rgba(134, 96, 50, 0.349);
+width: 18em;
+font-family: 'Montserrat', sans-serif; 
+color: #274427d8;
 }
-.fotoproblemas .logo{
-    display: flex;
+#linktree a{
+ margin: 1% 25%;
+}
+#linktree i{
+    display: none;
+}
+#linktree .links:hover{
+    color: black;
 }
 
-body{
-    margin: 0; /*es para que no haya margen entre el body y las otras cajas como el footer*/
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/*ESTILOS para la página "problemas" */
-.fotoproblemas{
-    background-image: url(../img/luz5.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
-    background-size: cover;
-}
-.fotoproblemas .logo{
-    display: flex;
-}
-.contenedorheader .logo img{
-    width: auto; 
-    height: 50px; 
-    transition: all 0.3s; /*es para el efecto del logo*/
-}
-.fotoproblemas .logo img:hover{
-transform: scale(1.1);  /*le da un efecto al logo*/
-}
-.fotoproblemas .contenedorheader{
-    display: flex;
-    right: 0;
-    left: 0;
-    top:0;
-    align-items: center;
-    background-color:#274427;
-    list-style-type: none; 
-    padding: 10px;
-    position: fixed;
-   justify-content: space-between;
-}
-.fotoproblemas .contenedorheader li{
-    display: inline-block;
-    text-align: center; 
-    padding: 0 5px;     
-}
-.fotoproblemas .contenedorheader li a{
-    font-family: 'Montserrat', sans-serif; 
-    color: #D4A373;
-    padding: 10px 10px;
-    text-decoration: none;   
-}
-.contenedorheader li:hover{
-    transform: scale(1.1);
-    color: white; /*sacar*/
-}
-
-/*body de problemas con la luz*/
-.conteiner_luz{
-    max-width: 1400px;
-    margin: auto;
-}
-#luzproblem .conteiner_luz{
+#luzproblem , #aguaproblem ,#bichosproblem ,#sueloproblem ,#otrosproblem {
     text-align: center;
-    padding: 200px 12px;
+    padding: 3em;
     font-family: 'Montserrat', sans-serif; 
 }
 #mucha_pocaluz .cajitas{
     background-color: rgb(30, 30, 30);
     background-size: cover;
     background-position: center center;
-    padding: 70px;
-    margin: 30px 30px;
+    padding: 50px;
+    margin: 10px 10px;
     border-radius: 15px;
     font-family:'Montserrat', sans-serif;
 }
 #mucha_pocaluz .conteiner_luz{
     text-align: center;
-    padding: 100px 0px;
+    padding: 30px 0px;
 }
 
 .cajitas:first-child{
@@ -291,7 +229,7 @@ color: black;
 }
 #mucha_pocaluz .cajitas button{
     font-size: 1em;
-    padding: 10px 15px;
+    padding: 5px 0px;
     border-radius: 8px;
     margin-top: 30px;
     background-color: rgba(128, 128, 128, 0.108);
@@ -303,13 +241,139 @@ color: black;
     transform: scale(1.1);
     cursor: pointer;
 }
+#aguaproblem h3, p{
+    margin: 1em;
+    text-align: justify;
+}
+.error{
+    text-decoration: underline red;
+}
+.solucion{
+    color: #438043;
+}
+#aguaproblem img{
+    display: none;
+}
+#sueloproblem img{
+    display: none;
+}
+#bichosproblem li{
+    list-style-type: none;
+}
+#bichosproblem h3, p, .listabichos{
+    margin: 1em;
+    text-align: justify;
+}
+#sueloproblem li{
+    list-style-type: none;
+}
+.pie_deimg{
+    padding: 1em;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.169);
+}
+@media(max-width:800px){
+    .imagenNosotras{
+        display: none;
+    }
+    .encabezado2{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen-nosotras2{
+       display: flex;
+       flex-direction: row;   
+       margin-top: 4rem; 
+    }
+    .h2-quienessomos{
+        padding-top: 1em;
+    }
+    .header{
+        flex-direction: column;
+    }
+   
+    }
 @media(min-width: 720px){/*esto significa que cuando el ancho de la 
     pantalla supere los 720px se le van a aplicar los sig estilos*/
 #mucha_pocaluz .conteiner_luz{
     display: flex;
     margin: 10px 20px;
+    padding: 2em;
+}
+.imgluz img{
+    display: none;
 }
 
+#linktree .links{
+    display: inline;
+    margin: 0.5em; 
+    border: none;
+}
+#linktree div{
+    display: flex;
+    background-color: rgba(220, 219, 215, 0.762);
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin-top: 4.5em;
+}
+#linktree i{
+    display: inline;
+}
+#luzproblem h2{
+    margin-top: 5em;
+}
+#luzproblem p{
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: justify;
+}
+#aguaproblem p{
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: justify;
+}
+#aguaproblem img{
+    display: flex;
+}
+#aguaproblem .imgriego{
+    display: flex;
+    flex-direction: row;
+}
+#aguaproblem .imgriego2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#sueloproblem img{
+    display: flex;
+    margin-top: 3em;
+}
+#sueloproblem .imgsuelo{
+    display: flex;
+    flex-direction: row;
+}
+#sueloproblem p .li{
+    text-align: justify;
+}
+#sueloproblem .compost{
+    display: flex;
+    flex-direction: row;
+}
+#sueloproblem .imgcompost{
+    display: flex;
+    flex-direction: row; 
+    margin-bottom: 3em; 
+}
+#otrosproblem .imghelada img{
+    width: 40%;
+}
+#otrosproblem .imghelada{
+    display: flex;
+    flex-direction: row;
+}
+}
 /*consejos de Contacto.html*/
 
 .conteiner_negro{
@@ -330,6 +394,11 @@ color: black;
     border-radius: 15px;
     font-family:'Montserrat', sans-serif;
 }
+#consejo .cajita:hover{
+    cursor: pointer;
+    transform: scale(1.05);  
+    overflow: hidden;
+    }
 #consejo .conteiner_negro{
     text-align: center;
     padding: 1px 0px;
@@ -346,26 +415,13 @@ color: white;
     
     color: white;
 }
-}
+
 .cajita:nth-child(3){
     background-image: 
     url(../img/FONDO.jpg);
     color: white;
 }
-#consejo .cajita button{
-    font-size: 1em;
-    padding: 10px 15px;
-    border-radius: 8px;
-    margin-top: 30px;
-    background-color: rgba(128, 128, 128, 0.108);
-    color: white;
-    border: 2px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.154);
-}
-#consejo .cajita button:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
+
 @media(min-width: 720px){/*esto significa que cuando el ancho de la 
     pantalla supere los 720px se le van a aplicar los sig estilos*/
 #consejo .conteiner_negro{
@@ -379,26 +435,28 @@ color: white;
         
             * {box-sizing: border-box; }
 
-            .parrafo-tips{
-                    font-family: 'Montserrat', sans-serif;
-                    text-align: center;
-                    
-                    font-size: 18px;
-                    margin-bottom: 30px;
-                    } 
-          
-            .h2consejos{
+ 	.h2consejos{
                 font-family: 'Julius Sans One', sans-serif;
                 font-size: 40px;
                 text-align: center;
-                margin: 0;
+                margin: 5rem;
                 margin-right: 5rem;
-                padding-top: 6rem; 
+                padding-top: 6rem;
+                 
+                }
+            .parrafo-tips{
+                    font-family: 'Montserrat', sans-serif;
+                    text-align: center;
+                    font-size: 18px;
+                    margin-bottom: 30px;
+                    } 
 
+            .encabezadoTips{
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: center;
                 }
 
-            
-            
           /*  .flex{
                 display: flex;
                 justify-content:center ;
@@ -410,7 +468,7 @@ color: white;
             */
                
             div.gallery {
-                border: 0.5px solid #ccc;
+                border: 1px solid #ccc;
                 }
 
             div.gallery img {
@@ -418,18 +476,21 @@ color: white;
                 height: auto;
                 }
 
-                .responsive {
+	 div.gallery img:hover{
+                transform: scale(1.05);
+            }
+           
+ 	 .responsive {
                 padding: 6px;
                 float:left;
                 width: 33%;
                 }
 
-             @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 700px) {
             
             .responsive {
                         width: 49.99999%;
-                        margin: 15px 0;
-                    }
+                        margin: 15px 0;}
                     }
 
              @media only screen and (max-width: 500px) {
@@ -439,20 +500,21 @@ color: white;
                     }
                     }
 
+  
                 .clearfix:after {
                     content: "";
                     display: table;
                     clear: both;}
-                                
+
                 /*--acá arranca el FORMULARIO-->*/
 
                 * {box-sizing: border-box;
                     }
 
-                    input[type=text], select, textarea {
+                     input[type=text], select, textarea {
                         width: 100%;
                         padding: 12px;
-                        border: 1px solid #ccc;
+                        border: 1px solid #274427;
                         border-radius: 4px;
                         resize: vertical;
                         font-family: 'Montserrat', sans-serif;
@@ -477,6 +539,7 @@ color: white;
 
                     input[type=submit]:hover {
                         background-color: #274427;
+                        transform: scale(1.05);
                     }
                     input[type=reset] {
                         background-color: #274427;
@@ -491,6 +554,7 @@ color: white;
 
                     input[type=reset]:hover {
                         background-color: #274427;
+ 			transform: scale(1.05);
                     }
 
                     .formulario {
@@ -534,3 +598,29 @@ h2{font-size: 2.7em;}
 h3{font-size: 2em;}
 p{font-size:1em ;}*/
 /*acá termina la prueba*/
+         
+/*ver esto que está acá si va o no
+#consejo .cajita button{
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 30px;
+    background-color: rgba(128, 128, 128, 0.108);
+    color: white;
+    border: 2px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.154);
+}
+#consejo .cajita button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+*/
+
+          
+
+
+            
+
+              
+                                
