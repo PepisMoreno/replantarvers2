@@ -495,7 +495,7 @@ color: white;
 }}
 /*fin de contactos*/
 
-/*Comienzo de tips y contactos*/
+/*Comienzo de tips, identificador y contactos*/
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nanum+Gothic&display=swap');
         
             * {box-sizing: border-box; }
@@ -509,6 +509,14 @@ color: white;
                 padding-top: 1rem;
                  
                 }
+    .h2ident{
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 40px;
+        text-align: center;
+        margin: 5rem;
+        margin-right: 5rem;
+        padding-top: 1rem;
+    }
 
     .parrafo-tips{
                 font-family: 'Julius Sans One', sans-serif;
@@ -517,15 +525,37 @@ color: white;
                 margin-bottom: 30px;
                 } 
     
+    .h3ident{
+        font-family: 'Julius Sans One', sans-serif;
+                text-align: center;
+                }
+    
+   /* @media only screen and (max-width: 700px) {
+                    .h3ident {
+                                width: 49.99999%;
+                                margin: 15px 0;}
+
+                    .h2ident { width: 49.99999%;
+                        margin: 15px 0;}
+                            }
+        
+                     @media only screen and (max-width: 500px) {
+                    
+                        .h2ident {
+                                width: 100%;
+                            }
+                        .h3ident {
+                                width: 100%;
+                            }
+                            }*/
     .h3cajitas{
                 font-family: 'Julius Sans One', sans-serif;
                 text-align: center;
-                 
                     }
+
     .parrafo-cajitas{
                 font-family: 'Julius Sans One', sans-serif;
                 text-align: center;
-                
                     }
 
     .encabezadoTips{
