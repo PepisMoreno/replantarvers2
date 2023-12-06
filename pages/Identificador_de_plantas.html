@@ -8,9 +8,11 @@
   
   <link rel="shortcut icon" href="../img/favicon.ico"><!--alguien sabe qué es esto??? porque no sé si quedó de algun script de página o qué-->
   <script src="https://kit.fontawesome.com/3b21fc997b.js" crossorigin="anonymous"></script>  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nanum+Gothic&display=swap');
+  </style>
+</head>
 
-</head>
-</head>
 
 
 <body>
@@ -36,17 +38,21 @@
         <br>
         <br>
         <div id="app" class="container">
-        <h1>Plantas</h1>
+        <h1 style="font-family: 'Julius Sans One', sans-serif;
+        font-size: 40px;
+        color: black;
+        text-align: center;
+        padding-top: 1em;">Clasificación de Plantas</h1>
         <br>
-        <a class="btn btn-primary" href="planta_nueva.html">Nueva</a>
+        <a class="btn btn-primary" href="planta_nueva.html" style="text-decoration: none; padding: 1em; font-size: 20px;">Agregar una nueva planta</a>
         <br><br>
         <div v-if="error">
-            <p>Lo sentimos , ........</p>
+            <p>No se pudo establecer una conexión</p>
         </div>
             <div v-else>
                 <section v-if="cargando">
                     <div class="spinner-border"></div>
-                    <p>Cargando .....</p>
+                    <p>Cargando ...</p>
                 </section>
                 <section v-else>
                     <div class="table-responsive">
@@ -61,17 +67,17 @@
                                </tr>
                             </thead>
                             <tbody>
-                               <tr class="" v-for="producto in productos">
-                                    <td scope="row">{{planta.id}}</td>
-                                    <td>{{planta.nombreComun}}</td>
-                                    <td>{{planta.nombreCientif}}</td>
-                                    <td>{{planta.imagen}}</td>
+                               <tr class="" v-for="planta in plantas">
+                                    <td scope="row">{{plantas.id}}</td>
+                                    <td>{{plantas.nombreComun}}</td>
+                                    <td>{{plantas.nombreCientif}}</td>
+                                    <td>{{plantas.imagen}}</td>
                                     <td>
-                                       <img width="60" :src="producto.imagen" :alt="producto.nombre">
+                                       <img width="60" :src="plantas.imagen" :alt="plantas.nombre">
                                     </td>
                                     <td>
-                                       <a class="btn btn-primary" :href="'planta_update.html?id='+ planta.id" >Editar</a>
-                                       <button type="button" class="btn btn-danger" v-on:click="eliminar(planta.id)" >Eliminar</button>
+                                       <a class="btn btn-primary" href="planta_update.html?id='+planta.id" >Editar</a>
+                                       <button type="button" class="btn btn-danger" v-on:click="eliminar(plantas.id)" >Eliminar</button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -105,8 +111,8 @@ crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
 integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
 crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
+    <script src="../JS/main.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
-    <script src="./js/plantas.js"></script>
+    <script src="../JS/plantas.js"></script>
 </body>
 </html>

@@ -1,50 +1,62 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Producto Nuevo</title>
+<title>Editar planta</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Bootstrap CSS v5.2.1 -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
 integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
-<body>
+<body   style="margin: 0; 
+display: flex;
+flex-direction: column;
+min-height: 100vh;">
 <header id="header">
 <!-- place navbar here -->
 </header>
 <main>
 <div class="container" id="app">
-<form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-<h2>Editar Producto </h2>
-<p>Precio:{{precio}}</p>
+<form style="background-color: aliceblue;margin:1em auto ; width: 400px; padding: 20px;">
+<h2>Editar Planta </h2>
+<p>Nombre:{{nombreComun}}</p>
 <div class="mb-3">
 <label for="id">Id</label>
 <input type="number" name="id" id="id" disabled v-model="id" >
 </div>
 <div class="mb-3">
-<label for="nombre">Nombre</label>
+<label for="nombre">Nombre Común</label>
 <input type="text" name="nombre" id="nombre" v-model="nombre">
 </div>
 <div class="mb-3">
-<label for="precio">Precio</label>
-<input type="number" name="precio" id="precio" v-model="precio">
-</div>
-<div class="mb-3">
-<label for="stock">Stock</label>
-<input type="number" name="stock" id="stock" v-model="stock">
+<label for="precio">Nombre Científico</label>
+<input type="text" name="precio" id="precio" v-model="precio">
 </div>
 <div class="mb-3">
 <label for="imagen">Imagen</label>
-<input type="text" name="imagen" id="imagen" v-model="imagen">
+<input type="file" name="imagen" id="imagen" v-model="imagen">
 <img width="100" :src="imagen" alt="">
 </div>
 <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
 </form>
 </div>
 </main>
-<footer>
-<!-- place footer here -->
+    <footer style="background-color:black;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    bottom: 0;
+    margin-top: auto;">
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-whatsapp"></i>
+<p class="footer">&copy; Todos los derechos reservados 2023<br>
+Programado por Josefina Moreno, Carina Rodrigues y Sofia Pizzamus</p>
+
 </footer>
+
 <!-- Bootstrap JavaScript Libraries -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
 integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -55,5 +67,6 @@ crossorigin="anonymous"> </script>
 <script src="./js/main.js"></script>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="./js/producto_editar.js"></script>
+<script src="https://kit.fontawesome.com/3b21fc997b.js" crossorigin="anonymous"></script>
 </body>
 </html>

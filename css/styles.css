@@ -188,7 +188,7 @@ footer, .footer{
     margin-top: auto;
 }
 body{
-    margin: 0; /*ver si se puede sacar porque ya está en el * */
+    margin: 0; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;

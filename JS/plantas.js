@@ -5,10 +5,10 @@ const { createApp } = Vue
                 plantas:[],
 //url:'http://localhost:5000/productos',
 // si el backend esta corriendo local usar localhost 5000(si no lo subieron a pythonanywhere)
-                url:'http://127.0.0.1:5000', 
+                url:'http://127.0.0.1:5000/plantas', 
                 error:false,
                 cargando:true,
-/*atributos para el guardar los valores del formulario */
+/*atributos para guardar los valores del formulario */
                 id:0,
                 nombreComun:"",
                 nombreCientif:"",
@@ -58,7 +58,7 @@ const { createApp } = Vue
                     })
                     .catch(err => {
                         console.error(err);
-                        alert("Error al Grabarr")
+                        alert("Error al Grabar")
                     })
             }
         },
